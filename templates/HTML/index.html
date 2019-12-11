@@ -1,0 +1,46 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Parser</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1> Text Parser</h1>
+    </nav>
+
+    <header id="main-header">
+        <h3>Please Input The Text And Function!!!</h3>
+        <div class="form">
+            <form action="/analyze" method="post">
+                {% csrf_token %}
+                <label for="txt-area" class="form-group">Text Input:</label>
+                <textarea name="text-area" id="txt-area" class="form-group" placeholder="Enter the text to be analyzed"
+                    cols="30" rows="10"></textarea>
+                <div id="container">
+                    <div class="form-elem">
+                        <input type="radio" name="ana-func" class="radio-btn" value="remv-punc" id="remv-punc"><label
+                            for="remv-punc">Remove Punctuations</label>
+                    </div>
+                    <div class="form-elem"><input type="radio" name="ana-func" class="radio-btn" value="remv-space"
+                            id="remv-space"><label for="remv-space">Remove Spaces</label></div>
+                    <div class="form-elem"><input type="radio" name="ana-func" class="radio-btn" value="cap-first"
+                            id="cap-first"><label for="cap-first">Capitalize First</label></div>
+                    <div class="form-elem"><input type="radio" name="ana-func" class="radio-btn" value="cap-all"
+                            id="cap-all"><label for="cap-all">Capitalize All</label></div>
+                </div>
+                <button type="submit" value="form-submit" class="form-group">Analyze Text</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>

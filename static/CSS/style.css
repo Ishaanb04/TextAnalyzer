@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c9d1d3;
+}
+
+#navbar{
+    background-color: #1b2a49;
+    color: #c9d1d3;
+    z-index: 1;
+}
+
+#navbar h1{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#main-header h3{
+    color: #1b2a49;
+    font-size: 20px;
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+#main-header .form{
+    background: #465881;
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: #c9d1d3;
+
+}
+
+#main-header .form label{
+    display: block;
+}
+
+#main-header .form textarea{
+    display: block;
+    margin: 0.70rem auto;
+    width: 100%;
+    padding: 0.40rem;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#main-header .form input{
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+#main-header .form button{
+    display: block;
+    width: 70%;
+    padding: 0.60rem;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+#container .form-elem{
+    flex: 1;
+}
+
+header .analyze-text{
+    background: #465881;
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: #c9d1d3;
+}
